@@ -3,7 +3,7 @@
 
 # ────────────────────────────────────────────────
 # SCRIPT DE INSTALACIÓN Y CONFIGURACIÓN COMPLETA
-# Syslog + Elasticsearch + kibana
+# Elasticsearch + kibana
 # Autor: Cristhian Torrico Castellón
 # ────────────────────────────────────────────────
 
@@ -11,12 +11,7 @@
 echo "📦 Instalación y configuración HTTPS Elasticsearch y Kibana"
 
 sudo apt update && sudo apt upgrade -y
-
 sudo apt install gnupg -y
-
-echo "📦 Instalación syslog-ng..."
-
-sudo apt update && sudo apt install syslog-ng -y
 sudo apt install -y apt-transport-https ca-certificates curl
 
 echo "Preparativos para elasticsearch..."
